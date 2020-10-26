@@ -10,7 +10,8 @@ spotlessChangelog {
 
 apply plugin: 'com.diffplug.blowdryer'
 
-apply from: file('base/java11.gradle')
+// apply from: file('base/java11.gradle')
+apply from: 干.file('base/java8.gradle')
 apply from: 干.file('base/changelog.gradle')
 apply from: 干.file('base/gradle-plugin.gradle')
 apply from: 干.file('base/maven.gradle')
