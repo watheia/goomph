@@ -16,7 +16,7 @@ before_script:
 
 build:
   stage: build
-  script: gradle --build-cache assemble
+  script: gradle assemble --build-cache --scan --warning-mode all
   artifacts:
     paths:
       - build/libs
@@ -29,7 +29,7 @@ build:
 
 test:
   stage: test
-  script: gradle check
+  script: gradle check --scan
   artifacts:
     paths:
       - build/reports
