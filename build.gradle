@@ -10,11 +10,11 @@ spotlessChangelog {
 
 apply plugin: 'com.diffplug.blowdryer'
 
-// apply from: file('base/java11.gradle')
-apply from: 干.file('base/java8.gradle')
+apply from: file('base/java11.gradle')
+// apply from: 干.file('base/java8.gradle')
 apply from: 干.file('base/changelog.gradle')
 apply from: 干.file('base/gradle-plugin.gradle')
-apply from: 干.file('base/maven.gradle')
+apply from: file('base/maven.gradle')
 apply from: 干.file('base/bintray.gradle')
 apply from: 干.file('spotless/freshmark.gradle')
 apply from: 干.file('spotless/java.gradle')
@@ -107,14 +107,14 @@ dependencies {
 ///////////
 // MAVEN //
 ///////////
-javadoc {
-	// error on javadoc problem
-	options.addStringOption('Xwerror', '-quiet')
-	// setup links
-	options.linksOffline('https://docs.oracle.com/javase/8/docs/api/', 'gradle/javadoc/java8')
-	options.linksOffline("https://docs.gradle.org/${OLDEST_SUPPORTED_GRADLE}/javadoc/", 'gradle/javadoc/gradle')
-	options.linksOffline("https://www.javadoc.io/doc/biz.aQute.bnd/biz.aQute.bndlib/${VER_BNDLIB}/", 'gradle/javadoc/bndlib')
-}
+// javadoc {
+// 	// error on javadoc problem
+// 	options.addStringOption('Xwerror', '-quiet')
+// 	// setup links
+// 	options.linksOffline('https://docs.oracle.com/javase/8/docs/api/', 'gradle/javadoc/java8')
+// 	options.linksOffline("https://docs.gradle.org/${OLDEST_SUPPORTED_GRADLE}/javadoc/", 'gradle/javadoc/gradle')
+// 	options.linksOffline("https://www.javadoc.io/doc/biz.aQute.bnd/biz.aQute.bndlib/${VER_BNDLIB}/", 'gradle/javadoc/bndlib')
+// }
 
 /////////////////////////////
 // LEGACY REDIRECT PLUGINS //
