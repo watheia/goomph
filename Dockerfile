@@ -4,6 +4,6 @@ WORKDIR /app
 COPY . .
 
 RUN gradle --version
-RUN gradle assemble --warning-mode all
+RUN gradle build --warning-mode all --no-daemon
 
 CMD [ "/bin/sh",  "-C"] 
