@@ -12,4 +12,3 @@ tasks.eclipse.dependsOn(cleanEclipse)
 repositories {
 	mavenCentral()
 }
-
