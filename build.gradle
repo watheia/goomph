@@ -107,14 +107,15 @@ dependencies {
 ///////////
 // MAVEN //
 ///////////
-// javadoc {
+javadoc {
+	failOnError = false
 // 	// error on javadoc problem
 // 	options.addStringOption('Xwerror', '-quiet')
 // 	// setup links
 // 	options.linksOffline('https://docs.oracle.com/javase/8/docs/api/', 'gradle/javadoc/java8')
 // 	options.linksOffline("https://docs.gradle.org/${OLDEST_SUPPORTED_GRADLE}/javadoc/", 'gradle/javadoc/gradle')
 // 	options.linksOffline("https://www.javadoc.io/doc/biz.aQute.bnd/biz.aQute.bndlib/${VER_BNDLIB}/", 'gradle/javadoc/bndlib')
-// }
+}
 
 /////////////////////////////
 // LEGACY REDIRECT PLUGINS //
